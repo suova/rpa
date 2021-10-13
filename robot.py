@@ -13,7 +13,6 @@ class Robot:
 
         for search_link in self.links:
             self.driver.get(search_link)
-            breakpoint()
             articles = self.driver.find_elements_by_xpath("//*[@data-selenium-selector='title-link']")
 
             time.sleep(TIMEOUT)
